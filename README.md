@@ -14,7 +14,7 @@ This repo contains the most important codes in the development stage (Step 1 & 2
 2. Developing Algorithms
   * Goal: Classification of tweets based on their normalized retweet counts (or retweet frequency, f) into Retweeted (f > 0.5%) and Not Retweeted classes (f <= 0.5%).
   * Tried K-nearest neighbors (KNN), Naive Bayes, and logistic regression, and used Scikit Learn grid search and cross-validation to optimize the parameter set for each method. 
-    - Accuracy on a held-out balanced test dataset: 61% for KNN, 71% for Multinomial Naive Bayes, and 75% for logistic regression.
+    - Accuracy on a held-out balanced test dataset: 61% for KNN, 67% for Multinomial Naive Bayes, and 75% for logistic regression.
     - Chosen logistic regression as the final model for its higher accuracy and nice probabilistic interpretation.
   * Using "fancier" algorithms such as decision tree models with bagging and boosting (e.g. random forest, XGBoost) may further improve the prediction accuracy/precision/recall. However, I decided to stick with logistic regression, because:
     - I like Occam's Razor principle: only go for a more complicated model if strictly necessary;
