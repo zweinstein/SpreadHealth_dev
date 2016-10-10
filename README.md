@@ -3,7 +3,7 @@ Codes for development of my Insight project:
 ## Spread Health: Empowering Public Health through Social Media
 
 I developed this project in 3 weeks at [Insight Health Data Science](http://insighthealthdata.com), with R, python, SQL, Flask, AWS, etc. 
-This repo contains the most important codes in the development stage (Step 1 & 2 below). Another [Repo](https://github.com/zweinstein/SpreadHealth) contains the production codes (Step 3 below) for the Web App [SpreadHealth.tech](spreadhealth.tech).
+This repo contains the most important codes in the development stage (Step 1 & 2 below). Another [Repo](https://github.com/zweinstein/SpreadHealth) contains the production codes (Step 3 below) for the Web App [SpreadHealth.tech](http://www.spreadhealth.tech).
 
 1. Collection of Tweets
   * Collected tweets posted from Sep 11 to Sep 25, 2016
