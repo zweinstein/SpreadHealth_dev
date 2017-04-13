@@ -10,6 +10,7 @@ This repo contains the most important codes in the development stage (Step 1 & 2
   * Limited the scope to tweets about alternative health approaches defined by [60 search keywords](https://github.com/zweinstein/D_I/blob/gh-pages/keywords.txt).
   * Normalized the retweet count by the number of followers for each user
   * Codes are in collectTweets.R (R codes)
+  * (Update April 2017): new scripts in python to collect tweets using tweepy. New tweets were collected on healthcare during the week of Apr 11, 2017 to train and test the classifier.
  
 2. Developing Algorithms
   * Goal: Classification of tweets based on their normalized retweet counts (or retweet frequency, f) into Retweeted (f > 0.5%) and Not Retweeted classes (f <= 0.5%).
@@ -23,6 +24,7 @@ This repo contains the most important codes in the development stage (Step 1 & 2
   * Some more feature engineering is more than likely to improve the prediction, e.g., polarity and sentiment of the tweet.
   * Codes for training the logistic regression with gradient descent and TF-IDF vectorization are in logit_GD.ipynb 
   * Codes for training the logistic regression with online gradient descent method and Hashing Vectorizer are in logit_SGD.ipynb. This is the final model I used for deploying the Flask App.     
+  * (Update April 2017): tried Random Forest (Classifier_RF.ipynb) but the classifier performed at similar to logistic regression, measured by prediction accuracy, specificity and sensitivity, precision and recall. Both models showed low F1-score (due to low precision) for retweeted tweets in highly imbalanced dataset (retweeted tweets were < 2% of all tweets, which simulate the real world scenario). 
 
 3. Deploying the Web App
   * The App is hosted on AWS: [SpreadHealth.tech](spreadhealth.tech)
